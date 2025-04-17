@@ -10,5 +10,4 @@ This theme aims to bring back **SOME** dearly missed elements from the Old disco
 3. Paste the following link in
 ```
 https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/OldUI.css
-
 ```
