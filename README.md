@@ -15,5 +15,7 @@ This theme aims to bring back **SOME** dearly missed elements from the Old disco
 https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/OldUI.css
 ```
 # Credits
-[Scattagain](https://github.com/scattagain)
-[NSPC911](https://github.com/NSPC911)
+[Scattagain](https://github.com/scattagain) for the guilbar revert theme
+[NSPC911](https://github.com/NSPC911) For the seamless integration themes
+[milbits](https://github.com/milbits) for the old context menu
+[refact0r](https://github.com/refact0r) for the improved mentions & Top bar
