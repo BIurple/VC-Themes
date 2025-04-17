@@ -1,6 +1,8 @@
 # Old UI Restoration Theme
 
-This repository was created so I could share my Vencord theme that uses mostly 96% other peoples' work that I've compiled into a single .css file while adding my own touches and fixes to it.
+This theme aims to bring back **SOME** dearly missed elements from the Old discord UI such as the user panel and serverlist, and making other aspects look a little fancier.
+
+**Most code is 96% other peoples' code that I've compiled into a single file with my own touches & fixes to it**
 
 # How to apply the theme
 1. In Discord, Head over to **User Settings**
