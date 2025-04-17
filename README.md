@@ -1,3 +1,6 @@
+# Please let me know if I forgot to credit you!
+
+
 # Old UI Restoration Theme
 
 This theme aims to bring back **SOME** dearly missed elements from the Old discord UI such as the user panel and serverlist, and making other aspects look a little fancier.
@@ -11,3 +14,6 @@ This theme aims to bring back **SOME** dearly missed elements from the Old disco
 ```
 https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/OldUI.css
 ```
+# Credits
+[Scattagain](https://github.com/scattagain)
+[NSPC911](https://github.com/NSPC911)
