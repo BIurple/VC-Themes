@@ -16,97 +16,6 @@ body {
     --custom-channel-textarea-text-area-height: 42px; /* Custom Chat Bar Height, default value is 42px */
 }
 
-/* Color options */
-:root {
-    --colors: off; /* turn off to use discord default colors */
-
-    /* text colors */
-	--text-0: white; /* text on colored elements */
-	--text-1: hsl(229, 73%, 90%); /* other normally white text */
-	--text-2: #c0caf5; /* headings and important text */
-	--text-3: #a9b1d6; /* normal text */
-	--text-4: hsl(229, 18%, 54%); /* icon buttons and channels */
-	--text-5: #414868; /* muted channels/chats and timestamps */
-
-    /* background and dark colors */
-	--bg-1: hsl(230, 22%, 26%); /* dark buttons when clicked */
-	--bg-2: hsl(231, 21%, 19%); /* dark buttons */
-	--bg-3: #1a1b26; /* spacing, secondary elements */
-	--bg-4: #16161d; /* main background color */
-	--hover: hsla(225, 22%, 41%, 0.125); /* channels and buttons when hovered */
-	--active: hsla(225, 22%, 41%, 0.267); /* channels and buttons when clicked or selected */
-    --active-2: hsla(225, 22%, 41%, 0.367); /* extra state for transparent buttons */
-	--message-hover: hsla(0, 0%, 0%, 0.1); /* messages when hovered */
-
-    /* accent colors */
-    --accent-1: var(--lavender-1); /* links and other accent text */
-    --accent-2: var(--lavender-2); /* small accent elements */
-    --accent-3: var(--lavender-3); /* accent buttons */
-    --accent-4: var(--lavender-4); /* accent buttons when hovered */
-    --accent-5: var(--lavender-5); /* accent buttons when clicked */
-    --accent-new: var(--accent-2); /* stuff that's normally red like mute/deafen buttons */
-    --mention: color-mix(in hsl, var(--accent-5), transparent 90%); /* background of messages that mention you */
-    --mention-hover: color-mix(in hsl, var(--accent-5), transparent 95%); /* background of messages that mention you when hovered */
-    --reply: color-mix(in hsl, var(--text-3), transparent 90%); /* background of messages that reply to you */
-    --reply-hover: color-mix(in hsl, var(--text-3), transparent 95%); /* background of messages that reply to you when hovered */
-
-    /* status indicator colors */
-    --online: var(--green-5); /* change to #43a25a for default */
-    --dnd: var(--red-5); /* change to #d83a42 for default */
-    --idle: var(--yellow-5); /* change to #ca9654 for default */
-    --streaming: var(--purple-4); /* change to #593695 for default */
-    --offline: var(--text-4); /* change to #83838b for default offline color */
-
-    /* border colors */
-    --border-light: var(--hover); /* light border color */
-    --border: var(--active); /* normal border color */
-    --button-border: hsl(235, 0%, 100%, 0.1); /* neutral border color of buttons */
-
-    /* base colors */
-    --red-1: hsl(343deg, 81%, 80%);
-    --red-2: hsl(343deg, 81%, 75%);
-    --red-3: hsl(343deg, 81%, 75%);
-    --red-4: hsl(343deg, 81%, 70%);
-    --red-5: hsl(343deg, 81%, 65%);
-
-    --green-1: hsl(115deg, 54%, 81%);
-    --green-2: hsl(115deg, 54%, 76%);
-    --green-3: hsl(115deg, 54%, 76%);
-    --green-4: hsl(115deg, 54%, 71%);
-    --green-5: hsl(115deg, 54%, 66%);
-
-    --blue-1: hsl(199deg, 76%, 74%);
-    --blue-2: hsl(199deg, 76%, 69%);
-    --blue-3: hsl(199deg, 76%, 69%);
-    --blue-4: hsl(199deg, 76%, 64%);
-    --blue-5: hsl(199deg, 76%, 59%);
-
-    --yellow-1: hsl(41deg, 86%, 88%);
-    --yellow-2: hsl(41deg, 86%, 83%);
-    --yellow-3: hsl(41deg, 86%, 83%);
-    --yellow-4: hsl(41deg, 86%, 78%);
-    --yellow-5: hsl(41deg, 86%, 73%);
-
-    --purple-1: hsl(267deg, 84%, 86%);
-    --purple-2: hsl(267deg, 84%, 81%);
-    --purple-3: hsl(267deg, 84%, 81%);
-    --purple-4: hsl(267deg, 84%, 76%);
-    --purple-5: hsl(267deg, 84%, 71%);
-
-    --lavender-1: hsl(232deg, 97%, 85%);
-	--lavender-2: hsl(232deg, 97%, 85%);
-	--lavender-3: hsl(232deg, 97%, 85%);
-	--lavender-4: hsl(232deg, 83%, 77%);
-	--lavender-5: hsl(232deg, 68%, 69%);
-
-	--tokyo-1: hsl(221, 89%, 72%);
-	--tokyo-2: hsl(221.29 59% 60%);
-	--tokyo-3: hsl(221.53 49% 52%);
-	--tokyo-4: hsl(221.85 50% 45%);
-	--tokyo-5: hsl(222.29 57% 38%);
-}
-
-
 /* Old UI User Panel */
 div[class^=sidebar_] section[class^=panels_] {
     border-radius: 0;
@@ -122,7 +31,6 @@ div[class^=sidebar_] nav[class^=wrapper_] {
 div[class^=sidebar_] div[class^=scroller__] {
   margin-bottom: unset !important;
 }
-
 
 
 /* Title Bar CSS */
@@ -165,29 +73,6 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
     height: 36px
 }
 
-/* Improve Highlight of Mentioned Messages */
-:root {
-[class="message_"],[class*="mentioned_"]::before,[class="replying_"]::before {
-	width: 2px;
-	border-radius: 4px;
-}
-
-[class="message_"],[class*="mentioned_"]::before, /* Mention Message Left Edge */ 
-[class^="botTagOP_"] {
-    background: var(--accent-3);
-}
-
-[class="message_"],
-[class*="mentioned_"] {
-	background: hsl(232, 97%, 85%, 0.05);
-}
-
-[class^="message__"][class*="mentioned__"][class*="selected__"],
-.mouse-mode.full-motion [class^="message__"][class^="mentioned__"]:hover {
-    background: hsl(232, 97%, 85%, 0.1);
-}
-
-}
 
 /* Fix Default Profiles being too light */
 :root {
@@ -202,10 +87,6 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 }
 }
 
-/* Hide chatbox when no access */
-[class*="channelTextAreaDisabled"] {
-  display: none !important;
-}
 
 /* Old Context/Popout Menu */
 .visual-refresh {
