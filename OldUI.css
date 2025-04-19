@@ -12,7 +12,6 @@
 
 
 body {
-    --custom-guild-list-padding: 12px; /* Shit for Server list to look just like the Old UI, Default value is 12px */
     --custom-channel-textarea-text-area-height: 42px; /* Custom Chat Bar Height, default value is 42px */
 }
 
