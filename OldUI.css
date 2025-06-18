@@ -90,7 +90,7 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 /* Old Context/Popout Menu */
 .visual-refresh {
 	.menu_c1e9c4, .option__3f413, .popout__3f413 {
-		background: var(--background-floating);
+		background: var(--background-surface-high);
 	    box-shadow: var(--shadow-high);
 	    border-radius: 4px;
 		border: none;
