@@ -21,7 +21,6 @@ div[class^=sidebar_] section[class^=panels_] {
     left: var(--custom-guild-list-width);
     bottom: 0;
     width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px) !important;
-    background-color: color-mix(in oklab, var(--background-tertiary), #000 11%) !important;
 }
 
 div[class^=sidebar_] nav[class^=wrapper_] {
