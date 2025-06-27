@@ -162,18 +162,18 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 		right: 0px !important;
 	}
 	.contentWrapper__08434 {
-	    background-color: var(--background-secondary);
+	    background-color: var(--background-base-lower);
 	    border-radius: 8px;
 	    box-shadow: var(--shadow-border), var(--shadow-high);
 		border: unset;
 	}
 	.header_fed6d3, .soundboardHeader__08434 {
-		background-color: var(--background-secondary);
+		background-color: var(--background-base-lower);
 	    box-shadow: var(--shadow-ledge);
 		border-bottom: unset;
 	}
 	.emojiPicker_c0e32c {
-		background-color: var(--background-secondary);
+		background-color: var(--background-base-lower);
 		box-shadow: var(--shadow-border), var(--shadow-high);
 		border-bottom-right-radius: var(--custom-emoji-picker-border-radius);
 		border-bottom-left-radius: var(--custom-emoji-picker-border-radius);
@@ -210,13 +210,13 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 		border-top: unset;
 	}
 	.wrapper__14245 {
-		background-color: var(--background-secondary);
+		background-color: var(--background-base-lower);
 	}
 	.wrapper__4e6ce {
 		background-color: var(--background-base-lowest);
 	}
 	.header_c0e32c {
-		background-color: var(--background-secondary);
+		background-color: var(--background-base-lower);
 		box-shadow: var(--shadow-low);
 		margin: 0 -1px;
 		padding: 12px;
@@ -234,7 +234,7 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 		border-bottom: 2px solid var(--background-modifier-accent);
 	}
 	.messagesPopoutWrap__45690 {
-		background-color: var(--background-secondary);
+		background-color: var(--background-base-lower);
 		border-radius: 8px;
 		max-height: 91vh !important;
 	}
