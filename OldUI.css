@@ -213,7 +213,7 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 		background-color: var(--background-secondary);
 	}
 	.wrapper__4e6ce {
-		background-color: var(--background-tertiary);
+		background-color: var(--background-base-lowest);
 	}
 	.header_c0e32c {
 		background-color: var(--background-secondary);
@@ -230,7 +230,7 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 	}
 	/* channel menus */
 	.header__45690 {
-		background: var(--background-tertiary);
+		background: var(--background-base-lowest);
 		border-bottom: 2px solid var(--background-modifier-accent);
 	}
 	.messagesPopoutWrap__45690 {
@@ -239,7 +239,7 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 		max-height: 91vh !important;
 	}
 	.messageGroupWrapper__45690 {
-		border: 1px solid var(--background-tertiary);
+		border: 1px solid var(--background-base-lowest);
 	    border-radius: 4px;
 	    -webkit-user-select: none;
         user-select: none;
