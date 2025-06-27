@@ -10,6 +10,24 @@
 /* Makes Chat Related Alerts feel more seamless */
 @import url("https://raw.githubusercontent.com/NSPC911/themes/refs/heads/main/vencord/ChatRelatedAlertsAtTop.theme.css");
 
+/* CSS VARIABLES */
+
+.theme-darker {	
+	--background-primary: var(--background-base-low) !important;
+	--background-secondary: var(--background-base-lower) !important;
+	--background-tertiary: var(--background-base-lowest) !important;
+	--background-surface-highest: var(--background-primary);
+	
+	--background-secondary-alt: color-mix(in oklab, var(--neutral-86) 30%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
+}
+.theme-midnight {
+	--background-primary: var(--background-base-low) !important;
+	--background-secondary: var(--background-base-lower) !important;
+	--background-tertiary: var(--background-base-lowest) !important;
+	--background-surface-highest: var(--background-primary);
+	
+	--background-secondary-alt: color-mix(in oklab, var(--neutral-86) 30%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
+}
 
 body {
     --custom-channel-textarea-text-area-height: 42px; /* Custom Chat Bar Height, default value is 42px */
@@ -162,18 +180,18 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 		right: 0px !important;
 	}
 	.contentWrapper__08434 {
-	    background-color: var(--background-base-lower);
+	    background-color: var(--background-secondary);
 	    border-radius: 8px;
 	    box-shadow: var(--shadow-border), var(--shadow-high);
 		border: unset;
 	}
 	.header_fed6d3, .soundboardHeader__08434 {
-		background-color: var(--background-base-lower);
+		background-color: var(--background-secondary);
 	    box-shadow: var(--shadow-ledge);
 		border-bottom: unset;
 	}
 	.emojiPicker_c0e32c {
-		background-color: var(--background-base-lower);
+		background-color: var(--background-secondary);
 		box-shadow: var(--shadow-border), var(--shadow-high);
 		border-bottom-right-radius: var(--custom-emoji-picker-border-radius);
 		border-bottom-left-radius: var(--custom-emoji-picker-border-radius);
@@ -210,13 +228,13 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 		border-top: unset;
 	}
 	.wrapper__14245 {
-		background-color: var(--background-base-lower);
+		background-color: var(--background-secondary);
 	}
 	.wrapper__4e6ce {
-		background-color: var(--background-base-lowest);
+		background-color: var(--background-tertiary);
 	}
 	.header_c0e32c {
-		background-color: var(--background-base-lower);
+		background-color: var(--background-secondary);
 		box-shadow: var(--shadow-low);
 		margin: 0 -1px;
 		padding: 12px;
@@ -230,16 +248,16 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 	}
 	/* channel menus */
 	.header__45690 {
-		background: var(--background-base-lowest);
+		background: var(--background-tertiary);
 		border-bottom: 2px solid var(--background-modifier-accent);
 	}
 	.messagesPopoutWrap__45690 {
-		background-color: var(--background-base-lower);
+		background-color: var(--background-secondary);
 		border-radius: 8px;
 		max-height: 91vh !important;
 	}
 	.messageGroupWrapper__45690 {
-		border: 1px solid var(--background-base-lowest);
+		border: 1px solid var(--background-tertiary);
 	    border-radius: 4px;
 	    -webkit-user-select: none;
         user-select: none;
