@@ -12,12 +12,19 @@
 
 /* CSS VARIABLES */
 
+.theme-dark {	
+	--background-primary: var(--background-base-low) !important;
+	--background-secondary: var(--background-base-lower) !important;
+	--background-tertiary: var(--background-base-lowest) !important;
+	--background-surface-highest: var(--background-primary);
+	--background-secondary-alt: color-mix(in oklab, var(--neutral-86) 30%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
+}
+
 .theme-darker {	
 	--background-primary: var(--background-base-low) !important;
 	--background-secondary: var(--background-base-lower) !important;
 	--background-tertiary: var(--background-base-lowest) !important;
 	--background-surface-highest: var(--background-primary);
-	--text-normal: var(--text-default) !important;
 	--background-secondary-alt: color-mix(in oklab, var(--neutral-86) 30%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
 }
 .theme-midnight {
@@ -25,7 +32,6 @@
 	--background-secondary: var(--background-base-lower) !important;
 	--background-tertiary: var(--background-base-lowest) !important;
 	--background-surface-highest: var(--background-primary);
-	--text-normal: var(--text-default) !important;
 	--background-secondary-alt: color-mix(in oklab, var(--neutral-86) 30%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
 }
 
@@ -280,3 +286,4 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 	    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
 	}
 }
+
