@@ -1,0 +1,381 @@
+/**
+ * @name Old UI Restoration
+ * @description A Bunch of Snippets to Bring back some good aspects of the Old UI
+ * @author Blurple
+ * @version 1.0.0
+*/
+
+/* Revert the Guild Bar back to Old UI Style */
+@import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
+/* Makes Chat Related Alerts feel more seamless */
+@import url("https://raw.githubusercontent.com/NSPC911/themes/refs/heads/main/vencord/ChatRelatedAlertsAtTop.theme.css");
+
+/* CSS VARIABLES */
+
+.theme-dark {	
+	--background-primary: var(--background-base-low) !important;
+	--background-secondary: var(--background-base-lower) !important;
+	--background-tertiary: var(--background-base-lowest) !important;
+	--background-surface-highest: var(--background-primary);
+	--background-secondary-alt: color-mix(in oklab, var(--neutral-86) 30%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
+}
+
+.theme-darker {	
+	--background-primary: var(--background-base-low) !important;
+	--background-secondary: var(--background-base-lower) !important;
+	--background-tertiary: var(--background-base-lowest) !important;
+	--background-surface-highest: var(--background-primary);
+	--background-secondary-alt: color-mix(in oklab, var(--neutral-86) 30%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
+}
+.theme-midnight {
+	--background-primary: var(--background-base-low) !important;
+	--background-secondary: var(--background-base-lower) !important;
+	--background-tertiary: var(--background-base-lowest) !important;
+	--background-surface-highest: var(--background-primary);
+	--background-secondary-alt: color-mix(in oklab, var(--neutral-86) 30%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
+}
+
+body {
+    --custom-channel-textarea-text-area-height: 42px; /* Custom Chat Bar Height, default value is 42px */
+}
+
+/* Old UI User Panel */
+div[class^=sidebar_] section[class^=panels_] {
+    border-radius: 0;
+    left: var(--custom-guild-list-width);
+    bottom: 0;
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px) !important;
+}
+
+div[class^=sidebar_] nav[class^=wrapper_] {
+  margin-bottom: unset !important;
+}
+
+div[class^=sidebar_] div[class^=scroller__] {
+  margin-bottom: unset !important;
+}
+
+
+/* Title Bar CSS */
+/* Move top bar title back to the left */
+[class^="title_c"] {
+   padding-left: var(--gap);
+   justify-content: flex-start;
+   margin-left: 0.5%;
+}
+[class^="title__"] {
+   gap: 4px;
+}
+/* style top bar title */
+[class^="title__"] [class^="icon__"] {
+    width: 16px;
+   height: 16px;
+   display: none;
+}
+[class^="title__"] .text-sm\/medium_cf4812 {
+   line-height: 90%;
+   color: var(--text-muted);
+   font-weight: 700;
+}
+
+
+/* rearrange toolbar */
+a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COMPACT TITLEBAR!!!*/
+{
+   display: none;
+}
+[class^="search_"] {
+   order: 1;
+   margin: 0 4px 0 12px;
+}
+
+
+
+/* Reduce Activity Panel's Height */
+.activityPanel_c48ade {
+    height: 36px
+}
+
+
+/* Fix Default Profiles being too light */
+:root {
+.theme-darker {
+    --background-secondary-alt: color-mix(in oklab,var(--neutral-82) 100%, var(--theme-base-color,#000) var(--theme-base-color-amount, 0%));
+    --bg-surface-overlay: color-mix(in oklab, var(--primary-800) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
+}
+
+.theme-midnight {
+    --background-secondary-alt: color-mix(in oklab, var(--neutral-95) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
+    --bg-surface-overlay: color-mix(in oklab, var(--primary-800) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
+}
+}
+
+/* Custom Version of Seamless chat bar */
+:root {
+    /* Custom padding for the chat box */
+    --rscb-chat-box-padding: 8px;
+}
+
+/* Fix chat Height? */
+.attachWrapper__0923f {
+	align-items: center;
+	height: 10px;
+}
+/* Fix annoying space between chat n' chat box? */
+.scroller__36d07 {
+	bottom: -16px;
+}
+
+:root .form_f75fb0,.attachWrapper__0923f {
+    display: flex;
+    flex-direction: column;
+    padding: 5px var(--rscb-chat-box-padding) var(--rscb-chat-box-padding)
+      var(--rscb-chat-box-padding) !important;
+    /* Normal chatbar */
+    .channelTextArea_f75fb0 {
+      margin-bottom: 0px;
+      margin-right: 1px;
+      /* reply bar */
+      .stackedBars__74017 {
+        border-bottom-color: transparent !important;
+        background-color: var(--chat-background-default);
+      }
+    }
+    /* slowmode bar + typing indicator */
+    .base_b88801 {
+      border-color: transparent !important;
+      position: static;
+      order: 1;
+      background: transparent !important;
+      background-image: transparent !important;
+      border: 1px solid var(--border-faint);
+      border-top: none;
+      border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+      .typing_b88801 {
+        border-color: transparent !important;
+      }
+      .typingDots_b88801,
+      .cooldownText_b21699 {
+        background-color: var(--chat-background-default);
+        height: 24px;
+        padding-right: 8px;
+        padding-left: 8px;
+        border-radius: 0 0 8px 8px;
+        border: 1px solid var(--border-faint) !important;
+        border-top-color: transparent !important;
+        /* because they dont have the same position */
+        &.typingDots_b88801 {
+          transform: translateX(-25px);
+          margin-bottom: 1px;
+          &:not(:has(span > strong)) {
+            display: none !important;
+          }
+        }
+        &.cooldownText_b21699 {
+          transform: translateY(0px);
+		  transform: translateX(16px);
+        }
+      }
+    }
+    .channelAttachmentArea_b77158 {
+      background-color: var(--chat-background-default);
+    }
+    /* the stars of the show, the :has */
+    /* check for typing thing */
+    &:has(> .typing_b88801 > .typingDots_b88801 > span > strong)
+      .channelTextArea_f75fb0 {
+      border-bottom-left-radius: 0 !important;
+    }
+    /* check for cooldown thing */
+    &:has(> .typing_b88801 > .cooldownWrapper_b21699) .channelTextArea_f75fb0 {
+      border-bottom-right-radius: 0 !important;
+    }
+}
+
+/* Old Context/Popout Menu */
+.visual-refresh {
+	.menu_c1e9c4, .option__3f413, .popout__3f413 {
+		background: var(--background-surface-high);
+	    box-shadow: var(--shadow-high);
+	    border-radius: 4px;
+		border: none;
+	}
+	.scroller_c1e9c4, .labelContainer_c1e9c4 {
+		padding: 6px 8px;
+	}
+	.wrapper_f563df {
+		gap: unset;
+		padding: 4px 0 6px 2px;
+		.button_f563df {
+			border-radius: 50%;
+			width: 32px;
+		    height: 32px;
+		    padding: 4px;
+		}
+	}
+	.item_c1e9c4 {
+	    box-sizing: border-box;
+	    margin: 2px 0;
+	}
+	.colorDefault_c1e9c4 .label_c1e9c4 {
+		color: unset;
+	}
+	.colorDefault_c1e9c4:active:not(.hideInteraction_c1e9c4) {
+		background-color: var(--menu-item-default-active-bg);
+	}
+	.colorDefault_c1e9c4.focused_c1e9c4 {
+		border-radius: 2px;
+	}
+	.colorDanger_c1e9c4, .colorDanger_c1e9c4 .checkbox_c1e9c4, .colorDanger_c1e9c4 .radioSelection_c1e9c4 {
+		color: var(--status-danger);
+	}
+	.colorDanger_c1e9c4.focused_c1e9c4 {
+	    color: var(--white);
+	}
+	.colorDefault_c1e9c4.focused_c1e9c4:not(.checkboxContainer_c1e9c4) path {
+	    fill: var(--white);
+	}
+	.iconContainer_c1e9c4 {
+		width: 18px;
+		height: 18px;
+	}
+	.separator_c1e9c4 {
+		margin: 4px;
+	}
+	.iconContainer_c1e9c4 {
+		svg.radioIcon_c1e9c4 {
+			width: 16px;
+			height: 16px;
+			margin-top: 2px
+		}
+		.refreshIconFill__001a7 {
+			fill: transparent;
+			stroke: white;
+			stroke-width: 2;
+			r: 10;
+		}
+		.refreshIconStroke__001a7 {
+			stroke-width: 0;
+		}
+		.refreshIcon__001a7 {
+			fill: var(--blurple);
+			r: 6
+		}
+	}
+	/* Emojis/GIF Picker */
+	.drawerSizingWrapper__08434 {
+		right: 0px !important;
+	}
+	.contentWrapper__08434 {
+	    background-color: var(--background-secondary);
+	    border-radius: 8px;
+	    box-shadow: var(--shadow-border), var(--shadow-high);
+		border: unset;
+	}
+	.header_fed6d3, .soundboardHeader__08434 {
+		background-color: var(--background-secondary);
+	    box-shadow: var(--shadow-ledge);
+		border-bottom: unset;
+	}
+	.emojiPicker_c0e32c {
+		background-color: var(--background-secondary);
+		box-shadow: var(--shadow-border), var(--shadow-high);
+		border-bottom-right-radius: var(--custom-emoji-picker-border-radius);
+		border-bottom-left-radius: var(--custom-emoji-picker-border-radius);
+		grid-template-columns: 48px auto;
+		grid-template-rows: auto 1fr auto;
+		height: var(--custom-emoji-picker-constants-emoji-picker-height);
+		width: var(--custom-emoji-picker-constants-min-emoji-picker-width);
+	}
+	.emojiPickerHasTabWrapper_c0e32c .emojiPicker_c0e32c {
+	    background-color: transparent;
+	    border-bottom-right-radius: 0;
+	    border-bottom-left-radius: 0;
+	    box-shadow: none;
+	    flex: 1 1 auto;
+	    grid-template-rows: auto 1fr auto;
+	    height: 100%;
+	    width: auto;
+	}
+	.categoryList_c0e32c {
+		top: 58px;
+	}
+	.expressionPickerCategoryList_a1e0e0 {
+		top: 50px;
+	}
+	.inspector_aeaaeb {
+		background-color: var(--background-secondary-alt);
+		border-top: unset;
+	}
+	.emojiPickerHasTabWrapper_c0e32c .categoryList_c0e32c {
+		top: 50px;
+	}
+	.unicodeShortcut_b9ee0c {
+		box-sizing: unset;
+		border-top: unset;
+	}
+	.wrapper__14245 {
+		background-color: var(--background-secondary);
+	}
+	.wrapper__4e6ce {
+		background-color: var(--background-tertiary);
+	}
+	.header_c0e32c {
+		background-color: var(--background-secondary);
+		box-shadow: var(--shadow-low);
+		margin: 0 -1px;
+		padding: 12px;
+		border-bottom: unset;
+	}
+	.childContainer__91a9d {
+		padding: 2px 0
+	}
+	.clickable__9293f .icon__9293f {
+		color: var(--interactive-normal);
+	}
+	/* channel menus */
+	.header__45690 {
+		background: var(--background-tertiary);
+		border-bottom: 2px solid var(--background-modifier-accent);
+	}
+	.messagesPopoutWrap__45690 {
+		background-color: var(--background-secondary);
+		border-radius: 8px;
+		max-height: 91vh !important;
+	}
+	.messageGroupWrapper__45690 {
+		border: 1px solid var(--background-tertiary);
+	    border-radius: 4px;
+	    -webkit-user-select: none;
+        user-select: none;
+		background: var(--background-primary);
+	    margin-right: unset;
+	}
+	.searchHeader_f3b986 {
+		background: var(--bg-overlay-chat);
+	    height: 48px;
+	    padding: 0 20px;
+		border: unset;
+	}
+	.content__49fc1 {
+		padding-top: unset;
+	}
+	.root__49fc1 {
+		border: none;
+	}
+	.rootWithShadow__49fc1 {
+	    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+	}
+}
+
+/* Fix Size of new Chat Box */
+.attachWrapper__0923f {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+}
+.attachButton__0923f {
+    align-self: center;
+}
+
