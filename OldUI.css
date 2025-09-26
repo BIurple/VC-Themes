@@ -287,3 +287,18 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 	}
 }
 
+/* Fix annoying space between chat n' chat box? */
+.scroller__36d07 {
+    bottom: -18px;
+}
+
+/* Fix Size of new Chat Box */
+.attachWrapper__0923f {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+}
+.attachButton__0923f {
+    align-self: center;
+}
