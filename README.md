@@ -22,3 +22,5 @@ https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/OldUI.css
 [milbits](https://github.com/milbits) for the old context menu
 
 [refact0r](https://github.com/refact0r) for the improved mentions & Top bar
+
+[AxDaxis](https://github.com/axdaxis) for a small contribution that saved me a headache
