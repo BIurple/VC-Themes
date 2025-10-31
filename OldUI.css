@@ -40,8 +40,12 @@ body {
 }
 
 /* Old UI User Panel */
-div[class^=sidebar_] section[class^=panels_] {
+div[class^="sidebar_"] section[class^="panels_"],
+section[class^="panels_"] > [class^="container__"] > [class^="container__"] {
     border-radius: 0;
+}
+
+div[class^=sidebar_] section[class^=panels_] {
     left: var(--custom-guild-list-width);
     bottom: 0;
     width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px) !important;
@@ -297,4 +301,5 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 .attachButton__0923f {
     align-self: center;
 }
+
 
