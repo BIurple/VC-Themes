@@ -61,25 +61,30 @@ div[class^=sidebar_] div[class^=scroller__] {
 
 
 /* Title Bar CSS */
+:root {
+	--custom-app-top-bar-height: 28px;
+}
 /* Move top bar title back to the left */
+.visual-refresh {
 [class^="title_c"] {
    padding-left: var(--gap);
    justify-content: flex-start;
    margin-left: 0.5%;
 }
-[class^="title__"] {
+[class^="title_e"] {
    gap: 4px;
 }
 /* style top bar title */
-[class^="title__"] [class^="icon__"] {
+[class^="title_e"] [class^="icon__"] {
     width: 16px;
    height: 16px;
    display: none;
 }
-[class^="title__"] .text-sm\/medium_cf4812 {
+[class^="title_e"] .text-sm\/medium_cf4812 {
    line-height: 90%;
    color: var(--text-muted);
    font-weight: 700;
+}
 }
 
 
@@ -100,18 +105,9 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
     height: 36px
 }
 
-
-/* Fix Default Profiles being too light */
-:root {
-.theme-darker {
-    --background-secondary-alt: color-mix(in oklab,var(--neutral-82) 100%, var(--theme-base-color,#000) var(--theme-base-color-amount, 0%));
-    --bg-surface-overlay: color-mix(in oklab, var(--primary-800) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
-}
-
-.theme-midnight {
-    --background-secondary-alt: color-mix(in oklab, var(--neutral-95) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
-    --bg-surface-overlay: color-mix(in oklab, var(--primary-800) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
-}
+/* Fix Weird Blur-Like thing for Chat */
+[class^="chatTypingGradientNotAtBottom__"],[class^="chatGradientBase__"] {
+	display: none !important;
 }
 
 
@@ -245,17 +241,17 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 	}
 	.header_c0e32c {
 		background-color: var(--background-secondary);
-		box-shadow: var(--shadow-low);
+		box-shadow: var(--shadow-high);
 		margin: 0 -1px;
-		padding: 12px;
+		padding: 4px;
 		border-bottom: unset;
 	}
 	.childContainer__91a9d {
 		padding: 2px 0
 	}
-	.clickable__9293f .icon__9293f {
-		color: var(--interactive-normal);
-	}
+	/*.clickable__9293f .icon__9293f {
+		color: var(--icon-muted);
+	}*/
 	/* channel menus */
 	.header__45690 {
 		background: var(--background-tertiary);
@@ -301,5 +297,6 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 .attachButton__0923f {
     align-self: center;
 }
+
 
 
