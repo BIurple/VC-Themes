@@ -8,7 +8,7 @@
 /* Revert the Guild Bar back to Old UI Style */
 @import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
 /* Makes Chat Related Alerts feel more seamless */
-@import url("https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/Imports/ChatRelatedAlertsAtTop.theme.css");
+@import url("https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/Imports/ChatRelatedAlertsAtTop.css");
 
 /* CSS VARIABLES */
 
@@ -297,6 +297,7 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 .attachButton__0923f {
     align-self: center;
 }
+
 
 
 
