@@ -1,24 +1,20 @@
-/* Custom Version of Seamless chat bar */
+/**
+ * @name Refreshed Seamless Chat Bar
+ * @description Moves around elements near the Chat Bar to be seamless with the message bar
+ * @author NSPG911, Modified by Azure
+ * @version 1.0.6
+*/
+
 :root {
     /* Custom padding for the chat box */
     --rscb-chat-box-padding: 8px;
-}
 
-body {
-    --custom-channel-textarea-text-area-height: 42px; /* Custom Chat Bar Height, default value is 42px */
-}
-
-/* Fix chat Height? */
-.attachWrapper__0923f {
-	align-items: center;
-	height: 10px;
-}
-/* Fix annoying space between chat n' chat box? */
+/* Fix annoying space between chat n' chat box */
 .scroller__36d07 {
-	bottom: -16px;
+	bottom: -1.5%;
 }
 
-#app-mount:not(:has([class*="channelTextAreaDisabled"])) .form_f75fb0,.attachWrapper__0923f {
+#app-mount .form_f75fb0 {
     display: flex;
     flex-direction: column;
     padding: 5px var(--rscb-chat-box-padding) var(--rscb-chat-box-padding)
@@ -83,4 +79,10 @@ body {
     &:has(> .typing_b88801 > .cooldownWrapper_b21699) .channelTextArea_f75fb0 {
       border-bottom-right-radius: 0 !important;
     }
+	/* Fix Add Attachment messing with the rest of the chatbar's Height */
+	.attachWrapper__0923f {
+    align-self: center;
+    padding: 0px calc(var(--space-md) - 6px);
+    }
+}
 }
