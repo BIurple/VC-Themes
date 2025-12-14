@@ -290,8 +290,9 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 /* Fix Size of new Chat Box */
 .attachWrapper__0923f {
 	align-self: center;
-	padding: 0px calc(var(--spacemd) - 6px);
+	padding: 0px calc(var(--space-md) - 6px);
 }
+
 
 
 
