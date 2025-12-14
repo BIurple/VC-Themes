@@ -24,17 +24,23 @@ https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/OldUI.css
 # Extras
 
 ### Seamless Chat Bar
+#### Reimagines the Chat Bar, Credit to [NSPC911](https://github.com/NSPC911)
 ```
 https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/Extras/SeamlessChatBar.css
 ```
 
+### Modern Indicators
+#### Stylizes the way Channels look, credits to the [Discord-Extensions](https://github.com/discord-extensions) team
+```
+https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/Extras/ModernIndicators.css
+```
 # Credits
 [Scattagain](https://github.com/scattagain) for the guilbar revert theme
 
 [NSPC911](https://github.com/NSPC911) For the seamless integration themes
 
-[milbits](https://github.com/milbits) for the old context menu
+[OldCord creator(s)](https://github.com/milbits/oldcord) for the Old Context Menu
 
-[refact0r](https://github.com/refact0r) for the improved mentions & Top bar
+[Midnight-Discord creator(s)](https://github.com/refact0r/midnight-discord) for the improved Mentions & Top bar
 
 [AxDaxis](https://github.com/axdaxis) for a small contribution that saved me a headache
