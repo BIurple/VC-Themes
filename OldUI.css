@@ -106,7 +106,7 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 }
 
 /* Fix Weird Blur-Like thing for Chat */
-[class^="chatTypingGradientNotAtBottom__"],[class^="chatGradientBase__"] {
+.chatTypingGradientNotAtBottom__36d07,.chatGradientBase__36d07 {
 	display: none !important;
 }
 
@@ -292,6 +292,7 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 	align-self: center;
 	padding: 0px calc(var(--space-md) - 6px);
 }
+
 
 
 
