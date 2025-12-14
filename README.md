@@ -7,13 +7,27 @@ This theme aims to bring back **SOME** dearly missed elements from the Old disco
 
 **Most code is 96% other peoples' code that I've compiled into a single file with my own touches & fixes to it**
 
-# How to apply the theme
-1. In Discord, Head over to **User Settings**
-2. Go to **Themes** then to **Online Themes**
-3. Paste the following link in
+# How to use
+### ![vencord](https://discord-extensions.github.io/assets/icons/vencord.gif) **[Vencord](https://github.com/Vendicated/Vencord)**
+#### From URL
+1. Go to **user settings** (CTRL + ,)
+2. Go to the "Vencord" category in **user settings**, select the "Themes" tab, then select "Online Themes".
+3. In the input field under "Online Themes" paste the following URL.
 ```
 https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/OldUI.css
 ```
+#### From `.css` File
+1. [Download the raw theme file from the github link](https://github.com/BIurple/VC-Themes/blob/main/OldUI.css)
+2. Open your themes folder by going to the "Vencord" category in user settings (CTRL + ,), select the "Themes" tab, and press the "Open Themes Folder" button.
+3. Drag the file into that folder.
+
+# Extras
+
+### Seamless Chat Bar
+```
+https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/Extras/SeamlessChatBar.css
+```
+
 # Credits
 [Scattagain](https://github.com/scattagain) for the guilbar revert theme
 
