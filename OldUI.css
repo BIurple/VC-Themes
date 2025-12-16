@@ -6,7 +6,7 @@
 */
 
 /* Revert the Guild Bar back to Old UI Style */
-@import url("https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/Imports/GuildBarRevert.css");
+@import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
 /* Makes Chat Related Alerts feel more seamless */
 @import url("https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/Imports/ChatRelatedAlertsAtTop.css");
 
@@ -40,34 +40,23 @@ body {
 }
 
 /* Old UI User Panel */
-.visual-refresh {
-#app-mount {
-._5e434347c823b592-sidebar ._5e434347c823b592-panels,
-._5e434347c823b592-panels > ._37e49614b9f110a9-container > ._4bbc6dc06e75ad52-container {
+div[class^="sidebar_"] section[class^="panels_"],
+section[class^="panels_"] > [class^="container__"] > [class^="container__"] {
     border-radius: 0;
 }
 
-._5e434347c823b592-sidebar ._5e434347c823b592-panels {
-
+div[class^=sidebar_] section[class^=panels_] {
     left: var(--custom-guild-list-width);
     bottom: 0;
     width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px) !important;
-	background-color: color-mix(in oklab, var(--background-tertiary), #000 11%);
 }
 
-/* Reduce Activity Panel's Height */
-._5e434347c823b592-activityPanel {
-    height: 36px;
-	background-color: color-mix(in oklab, var(--background-tertiary), #000 11%) !important;
+div[class^=sidebar_] nav[class^=wrapper_] {
+  margin-bottom: unset !important;
 }
 
-._5e434347c823b592-sidebar ._5e434347c823b592-wrapper {
+div[class^=sidebar_] div[class^=scroller__] {
   margin-bottom: unset !important;
-}
-/*div[class^=sidebar_] div[class^=scroller__] {
-  margin-bottom: unset !important;
-}*/
-}
 }
 
 
@@ -77,21 +66,21 @@ body {
 }
 /* Move top bar title back to the left */
 .visual-refresh {
-.c38106a3f0c3ca76-title {
+[class^="title_c"] {
    padding-left: var(--gap);
    justify-content: flex-start;
    margin-left: 0.5%;
 }
-.edbb22df99c39831-title {
+[class^="title_e"] {
    gap: 4px;
 }
 /* style top bar title */
-/*.edbb22df99c39831-title .edbb22df99c39831-guildIcon {
+[class^="title_e"] [class^="icon__"] {
     width: 16px;
    height: 16px;
    display: none;
-}*/
-.edbb22df99c39831-title .cf48127484dbde85-text-sm\/medium {
+}
+[class^="title_e"] .text-sm\/medium_cf4812 {
    line-height: 90%;
    color: var(--text-muted);
    font-weight: 700;
@@ -104,7 +93,7 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 {
    display: none;
 }
-._974928fe84ca9647-search {
+[class^="search_"] {
    order: 1;
    margin: 0 4px 0 12px;
 }
@@ -117,63 +106,63 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 }
 
 /* Fix Weird Blur-Like thing for Chat */
-._36d072eab2b2e737-chatTypingGradientNotAtBottom,._36d072eab2b2e737-chatGradientBase {
+.chatTypingGradientNotAtBottom__36d07,.chatGradientBase__36d07 {
 	display: none !important;
 }
 
 
 /* Old Context/Popout Menu */
 .visual-refresh {
-	.c1e9c47c23f12ca3-menu, .option__3f413, .popout__3f413 {
+	.menu_c1e9c4, .option__3f413, .popout__3f413 {
 		background: var(--background-surface-high);
 	    box-shadow: var(--shadow-high);
 	    border-radius: 4px;
 		border: none;
 	}
-	.c1e9c47c23f12ca3-scroller, .c1e9c47c23f12ca3-labelContainer {
+	.scroller_c1e9c4, .labelContainer_c1e9c4 {
 		padding: 6px 8px;
 	}
-	.f563df886a7377be-wrapper {
+	.wrapper_f563df {
 		gap: unset;
 		padding: 4px 0 6px 2px;
-		.f563df886a7377be-button {
+		.button_f563df {
 			border-radius: 50%;
 			width: 32px;
 		    height: 32px;
 		    padding: 4px;
 		}
 	}
-	.c1e9c47c23f12ca3-item {
+	.item_c1e9c4 {
 	    box-sizing: border-box;
 	    margin: 2px 0;
 	}
-	.c1e9c47c23f12ca3-colorDefault .c1e9c47c23f12ca3-label {
+	.colorDefault_c1e9c4 .label_c1e9c4 {
 		color: unset;
 	}
-	.c1e9c47c23f12ca3-colorDefault:active:not(.c1e9c47c23f12ca3-hideInteraction) {
+	.colorDefault_c1e9c4:active:not(.hideInteraction_c1e9c4) {
 		background-color: var(--menu-item-default-active-bg);
 	}
-	.c1e9c47c23f12ca3-colorDefault.c1e9c47c23f12ca3-focused {
+	.colorDefault_c1e9c4.focused_c1e9c4 {
 		border-radius: 2px;
 	}
-	.c1e9c47c23f12ca3-colorDanger, .c1e9c47c23f12ca3-colorDanger .c1e9c47c23f12ca3-checkbox, .c1e9c47c23f12ca3-colorDanger .c1e9c47c23f12ca3-radioSelection {
+	.colorDanger_c1e9c4, .colorDanger_c1e9c4 .checkbox_c1e9c4, .colorDanger_c1e9c4 .radioSelection_c1e9c4 {
 		color: var(--status-danger);
 	}
-	.c1e9c47c23f12ca3-colorDanger.c1e9c47c23f12ca3-focused {
+	.colorDanger_c1e9c4.focused_c1e9c4 {
 	    color: var(--white);
 	}
-	.c1e9c47c23f12ca3-colorDefault.c1e9c47c23f12ca3-focused:not(.c1e9c47c23f12ca3-checkboxContainer) path {
+	.colorDefault_c1e9c4.focused_c1e9c4:not(.checkboxContainer_c1e9c4) path {
 	    fill: var(--white);
 	}
-	.c1e9c47c23f12ca3-iconContainer {
+	.iconContainer_c1e9c4 {
 		width: 18px;
 		height: 18px;
 	}
-	.c1e9c47c23f12ca3-separator {
+	.separator_c1e9c4 {
 		margin: 4px;
 	}
-	.c1e9c47c23f12ca3-iconContainer {
-		svg.c1e9c47c23f12ca3-radioIcon {
+	.iconContainer_c1e9c4 {
+		svg.radioIcon_c1e9c4 {
 			width: 16px;
 			height: 16px;
 			margin-top: 2px
@@ -193,21 +182,21 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 		}
 	}
 	/* Emojis/GIF Picker */
-	._084343c4f11eaaab-drawerSizingWrapper {
+	.drawerSizingWrapper__08434 {
 		right: 0px !important;
 	}
-	._084343c4f11eaaab-contentWrapper {
+	.contentWrapper__08434 {
 	    background-color: var(--background-secondary);
 	    border-radius: 8px;
 	    box-shadow: var(--shadow-border), var(--shadow-high);
 		border: unset;
 	}
-	.fed6d32841cc2da2-header, ._084343c4f11eaaab-soundboardHeader {
+	.header_fed6d3, .soundboardHeader__08434 {
 		background-color: var(--background-secondary);
 	    box-shadow: var(--shadow-ledge);
 		border-bottom: unset;
 	}
-	.c0e32c5cffed3d9f-emojiPicker {
+	.emojiPicker_c0e32c {
 		background-color: var(--background-secondary);
 		box-shadow: var(--shadow-border), var(--shadow-high);
 		border-bottom-right-radius: var(--custom-emoji-picker-border-radius);
@@ -217,7 +206,7 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 		height: var(--custom-emoji-picker-constants-emoji-picker-height);
 		width: var(--custom-emoji-picker-constants-min-emoji-picker-width);
 	}
-	.c0e32c5cffed3d9f-emojiPickerHasTabWrapper .c0e32c5cffed3d9f-emojiPicker {
+	.emojiPickerHasTabWrapper_c0e32c .emojiPicker_c0e32c {
 	    background-color: transparent;
 	    border-bottom-right-radius: 0;
 	    border-bottom-left-radius: 0;
@@ -227,40 +216,40 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 	    height: 100%;
 	    width: auto;
 	}
-	.c0e32c5cffed3d9f-categoryList {
+	.categoryList_c0e32c {
 		top: 58px;
 	}
-	.a1e0e01524490cf9-expressionPickerCategoryList {
+	.expressionPickerCategoryList_a1e0e0 {
 		top: 50px;
 	}
-	.aeaaeb2a573807f0-inspector {
+	.inspector_aeaaeb {
 		background-color: var(--background-secondary-alt);
 		border-top: unset;
 	}
-	.c0e32c5cffed3d9f-emojiPickerHasTabWrapper .c0e32c5cffed3d9f-categoryList {
+	.emojiPickerHasTabWrapper_c0e32c .categoryList_c0e32c {
 		top: 50px;
 	}
-	.b9ee0c229bc0b6bb-unicodeShortcut {
+	.unicodeShortcut_b9ee0c {
 		box-sizing: unset;
 		border-top: unset;
 	}
-	._14245bb948377a25-wrapper {
+	.wrapper__14245 {
 		background-color: var(--background-secondary);
 	}
-	._4e6cebf8beed1ad8-wrapper {
+	.wrapper__4e6ce {
 		background-color: var(--background-tertiary);
 	}
-	.c0e32c5cffed3d9f-header {
+	.header_c0e32c {
 		background-color: var(--background-secondary);
 		box-shadow: var(--shadow-high);
 		margin: 0 -1px;
 		padding: 4px;
 		border-bottom: unset;
 	}
-	._91a9d7f7e5248a56-childContainer {
+	.childContainer__91a9d {
 		padding: 2px 0
 	}
-	/*._9293f6b2fc12398a-clickable ._9293f6b2fc12398a-icon {
+	/*.clickable__9293f .icon__9293f {
 		color: var(--icon-muted);
 	}*/
 	/* channel menus */
@@ -281,31 +270,28 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 		background: var(--background-primary);
 	    margin-right: unset;
 	}
-	.f3b986a284a18c78-searchHeader {
+	.searchHeader_f3b986 {
 		background: var(--bg-overlay-chat);
 	    height: 48px;
 	    padding: 0 20px;
 		border: unset;
 	}
-	._49fc18ba07c5025f-content {
+	.content__49fc1 {
 		padding-top: unset;
 	}
-	._49fc18ba07c5025f-root {
+	.root__49fc1 {
 		border: none;
 	}
-	._49fc18ba07c5025f-rootWithShadow {
+	.rootWithShadow__49fc1 {
 	    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
 	}
 }
 
 /* Fix Size of new Chat Box */
-._0923f156a0410684-attachWrapper {
+.attachWrapper__0923f {
 	align-self: center;
 	padding: 0px calc(var(--space-md) - 6px);
 }
-
-
-
 
 
 
