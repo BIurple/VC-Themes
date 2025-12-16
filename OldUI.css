@@ -40,23 +40,34 @@ body {
 }
 
 /* Old UI User Panel */
-div[class^="sidebar_"] section[class^="panels_"],
-section[class^="panels_"] > [class^="container__"] > [class^="container__"] {
+.visual-refresh {
+#app-mount {
+._5e434347c823b592-sidebar ._5e434347c823b592-panels,
+._5e434347c823b592-panels > ._37e49614b9f110a9-container > ._4bbc6dc06e75ad52-container {
     border-radius: 0;
 }
 
-div[class^=sidebar_] section[class^=panels_] {
+._5e434347c823b592-sidebar ._5e434347c823b592-panels {
+
     left: var(--custom-guild-list-width);
     bottom: 0;
     width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px) !important;
+	background-color: color-mix(in oklab, var(--background-tertiary), #000 11%);
 }
 
-div[class^=sidebar_] nav[class^=wrapper_] {
-  margin-bottom: unset !important;
+/* Reduce Activity Panel's Height */
+._5e434347c823b592-activityPanel {
+    height: 36px;
+	background-color: color-mix(in oklab, var(--background-tertiary), #000 11%) !important;
 }
 
-div[class^=sidebar_] div[class^=scroller__] {
+._5e434347c823b592-sidebar ._5e434347c823b592-wrapper {
   margin-bottom: unset !important;
+}
+/*div[class^=sidebar_] div[class^=scroller__] {
+  margin-bottom: unset !important;
+}*/
+}
 }
 
 
@@ -66,21 +77,21 @@ div[class^=sidebar_] div[class^=scroller__] {
 }
 /* Move top bar title back to the left */
 .visual-refresh {
-[class^="title_c"] {
+.c38106a3f0c3ca76-title {
    padding-left: var(--gap);
    justify-content: flex-start;
    margin-left: 0.5%;
 }
-[class^="title_e"] {
+.edbb22df99c39831-title {
    gap: 4px;
 }
 /* style top bar title */
-[class^="title_e"] [class^="icon__"] {
+/*.edbb22df99c39831-title .edbb22df99c39831-guildIcon {
     width: 16px;
    height: 16px;
    display: none;
-}
-[class^="title_e"] .text-sm\/medium_cf4812 {
+}*/
+.edbb22df99c39831-title .cf48127484dbde85-text-sm\/medium {
    line-height: 90%;
    color: var(--text-muted);
    font-weight: 700;
@@ -93,7 +104,7 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 {
    display: none;
 }
-[class^="search_"] {
+._974928fe84ca9647-search {
    order: 1;
    margin: 0 4px 0 12px;
 }
@@ -106,63 +117,63 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 }
 
 /* Fix Weird Blur-Like thing for Chat */
-.chatTypingGradientNotAtBottom__36d07,.chatGradientBase__36d07 {
+._36d072eab2b2e737-chatTypingGradientNotAtBottom,._36d072eab2b2e737-chatGradientBase {
 	display: none !important;
 }
 
 
 /* Old Context/Popout Menu */
 .visual-refresh {
-	.menu_c1e9c4, .option__3f413, .popout__3f413 {
+	.c1e9c47c23f12ca3-menu, .option__3f413, .popout__3f413 {
 		background: var(--background-surface-high);
 	    box-shadow: var(--shadow-high);
 	    border-radius: 4px;
 		border: none;
 	}
-	.scroller_c1e9c4, .labelContainer_c1e9c4 {
+	.c1e9c47c23f12ca3-scroller, .c1e9c47c23f12ca3-labelContainer {
 		padding: 6px 8px;
 	}
-	.wrapper_f563df {
+	.f563df886a7377be-wrapper {
 		gap: unset;
 		padding: 4px 0 6px 2px;
-		.button_f563df {
+		.f563df886a7377be-button {
 			border-radius: 50%;
 			width: 32px;
 		    height: 32px;
 		    padding: 4px;
 		}
 	}
-	.item_c1e9c4 {
+	.c1e9c47c23f12ca3-item {
 	    box-sizing: border-box;
 	    margin: 2px 0;
 	}
-	.colorDefault_c1e9c4 .label_c1e9c4 {
+	.c1e9c47c23f12ca3-colorDefault .c1e9c47c23f12ca3-label {
 		color: unset;
 	}
-	.colorDefault_c1e9c4:active:not(.hideInteraction_c1e9c4) {
+	.c1e9c47c23f12ca3-colorDefault:active:not(.c1e9c47c23f12ca3-hideInteraction) {
 		background-color: var(--menu-item-default-active-bg);
 	}
-	.colorDefault_c1e9c4.focused_c1e9c4 {
+	.c1e9c47c23f12ca3-colorDefault.c1e9c47c23f12ca3-focused {
 		border-radius: 2px;
 	}
-	.colorDanger_c1e9c4, .colorDanger_c1e9c4 .checkbox_c1e9c4, .colorDanger_c1e9c4 .radioSelection_c1e9c4 {
+	.c1e9c47c23f12ca3-colorDanger, .c1e9c47c23f12ca3-colorDanger .c1e9c47c23f12ca3-checkbox, .c1e9c47c23f12ca3-colorDanger .c1e9c47c23f12ca3-radioSelection {
 		color: var(--status-danger);
 	}
-	.colorDanger_c1e9c4.focused_c1e9c4 {
+	.c1e9c47c23f12ca3-colorDanger.c1e9c47c23f12ca3-focused {
 	    color: var(--white);
 	}
-	.colorDefault_c1e9c4.focused_c1e9c4:not(.checkboxContainer_c1e9c4) path {
+	.c1e9c47c23f12ca3-colorDefault.c1e9c47c23f12ca3-focused:not(.c1e9c47c23f12ca3-checkboxContainer) path {
 	    fill: var(--white);
 	}
-	.iconContainer_c1e9c4 {
+	.c1e9c47c23f12ca3-iconContainer {
 		width: 18px;
 		height: 18px;
 	}
-	.separator_c1e9c4 {
+	.c1e9c47c23f12ca3-separator {
 		margin: 4px;
 	}
-	.iconContainer_c1e9c4 {
-		svg.radioIcon_c1e9c4 {
+	.c1e9c47c23f12ca3-iconContainer {
+		svg.c1e9c47c23f12ca3-radioIcon {
 			width: 16px;
 			height: 16px;
 			margin-top: 2px
@@ -182,21 +193,21 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 		}
 	}
 	/* Emojis/GIF Picker */
-	.drawerSizingWrapper__08434 {
+	._084343c4f11eaaab-drawerSizingWrapper {
 		right: 0px !important;
 	}
-	.contentWrapper__08434 {
+	._084343c4f11eaaab-contentWrapper {
 	    background-color: var(--background-secondary);
 	    border-radius: 8px;
 	    box-shadow: var(--shadow-border), var(--shadow-high);
 		border: unset;
 	}
-	.header_fed6d3, .soundboardHeader__08434 {
+	.fed6d32841cc2da2-header, ._084343c4f11eaaab-soundboardHeader {
 		background-color: var(--background-secondary);
 	    box-shadow: var(--shadow-ledge);
 		border-bottom: unset;
 	}
-	.emojiPicker_c0e32c {
+	.c0e32c5cffed3d9f-emojiPicker {
 		background-color: var(--background-secondary);
 		box-shadow: var(--shadow-border), var(--shadow-high);
 		border-bottom-right-radius: var(--custom-emoji-picker-border-radius);
@@ -206,7 +217,7 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 		height: var(--custom-emoji-picker-constants-emoji-picker-height);
 		width: var(--custom-emoji-picker-constants-min-emoji-picker-width);
 	}
-	.emojiPickerHasTabWrapper_c0e32c .emojiPicker_c0e32c {
+	.c0e32c5cffed3d9f-emojiPickerHasTabWrapper .c0e32c5cffed3d9f-emojiPicker {
 	    background-color: transparent;
 	    border-bottom-right-radius: 0;
 	    border-bottom-left-radius: 0;
@@ -216,40 +227,40 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 	    height: 100%;
 	    width: auto;
 	}
-	.categoryList_c0e32c {
+	.c0e32c5cffed3d9f-categoryList {
 		top: 58px;
 	}
-	.expressionPickerCategoryList_a1e0e0 {
+	.a1e0e01524490cf9-expressionPickerCategoryList {
 		top: 50px;
 	}
-	.inspector_aeaaeb {
+	.aeaaeb2a573807f0-inspector {
 		background-color: var(--background-secondary-alt);
 		border-top: unset;
 	}
-	.emojiPickerHasTabWrapper_c0e32c .categoryList_c0e32c {
+	.c0e32c5cffed3d9f-emojiPickerHasTabWrapper .c0e32c5cffed3d9f-categoryList {
 		top: 50px;
 	}
-	.unicodeShortcut_b9ee0c {
+	.b9ee0c229bc0b6bb-unicodeShortcut {
 		box-sizing: unset;
 		border-top: unset;
 	}
-	.wrapper__14245 {
+	._14245bb948377a25-wrapper {
 		background-color: var(--background-secondary);
 	}
-	.wrapper__4e6ce {
+	._4e6cebf8beed1ad8-wrapper {
 		background-color: var(--background-tertiary);
 	}
-	.header_c0e32c {
+	.c0e32c5cffed3d9f-header {
 		background-color: var(--background-secondary);
 		box-shadow: var(--shadow-high);
 		margin: 0 -1px;
 		padding: 4px;
 		border-bottom: unset;
 	}
-	.childContainer__91a9d {
+	._91a9d7f7e5248a56-childContainer {
 		padding: 2px 0
 	}
-	/*.clickable__9293f .icon__9293f {
+	/*._9293f6b2fc12398a-clickable ._9293f6b2fc12398a-icon {
 		color: var(--icon-muted);
 	}*/
 	/* channel menus */
@@ -270,28 +281,29 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 		background: var(--background-primary);
 	    margin-right: unset;
 	}
-	.searchHeader_f3b986 {
+	.f3b986a284a18c78-searchHeader {
 		background: var(--bg-overlay-chat);
 	    height: 48px;
 	    padding: 0 20px;
 		border: unset;
 	}
-	.content__49fc1 {
+	._49fc18ba07c5025f-content {
 		padding-top: unset;
 	}
-	.root__49fc1 {
+	._49fc18ba07c5025f-root {
 		border: none;
 	}
-	.rootWithShadow__49fc1 {
+	._49fc18ba07c5025f-rootWithShadow {
 	    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
 	}
 }
 
 /* Fix Size of new Chat Box */
-.attachWrapper__0923f {
+._0923f156a0410684-attachWrapper {
 	align-self: center;
 	padding: 0px calc(var(--space-md) - 6px);
 }
+
 
 
 
