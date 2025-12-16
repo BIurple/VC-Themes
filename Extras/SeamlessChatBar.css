@@ -2,7 +2,7 @@
  * @name Refreshed Seamless Chat Bar
  * @description Moves around elements near the Chat Bar to be seamless with the message bar
  * @author NSPG911, Modified by Azure
- * @version 1.0.6
+ * @version 1.0.7
 */
 
 :root {
@@ -10,27 +10,27 @@
     --rscb-chat-box-padding: 8px;
 
 /* Fix annoying space between chat n' chat box */
-.scroller__36d07 {
+._36d072eab2b2e737-scroller {
 	bottom: -1.5%;
 }
 
-#app-mount .form_f75fb0 {
+#app-mount .f75fb00fb7356cbe-form {
     display: flex;
     flex-direction: column;
     padding: 5px var(--rscb-chat-box-padding) var(--rscb-chat-box-padding)
       var(--rscb-chat-box-padding) !important;
     /* Normal chatbar */
-    .channelTextArea_f75fb0 {
+    .f75fb00fb7356cbe-channelTextArea {
       margin-bottom: 0px;
       margin-right: 1px;
       /* reply bar */
-      .stackedBars__74017 {
+      ._740174f3d6a2c8fe-stackedBars {
         border-bottom-color: transparent !important;
         background-color: var(--chat-background-default);
       }
     }
     /* slowmode bar + typing indicator */
-    .base_b88801 {
+    .b8880176888cc928-base {
       border-color: transparent !important;
       position: static;
       order: 1;
@@ -39,11 +39,11 @@
       border: 1px solid var(--border-faint);
       border-top: none;
       border-radius: var(--radius-sm) var(--radius-sm) 0 0;
-      .typing_b88801 {
+      .b8880176888cc928-typing {
         border-color: transparent !important;
       }
-      .typingDots_b88801,
-      .cooldownText_b21699 {
+      .b8880176888cc928-typingDots,
+      .b216994de061a9e2-cooldownText {
         background-color: var(--chat-background-default);
         height: 24px;
         padding-right: 8px;
@@ -53,34 +53,34 @@
         border: 1px solid var(--border-faint) !important;
         border-top-color: transparent !important;
         /* because they dont have the same position */
-        &.typingDots_b88801 {
+        &.b8880176888cc928-typingDots {
           transform: translateX(-25px);
           margin-bottom: 1px;
           &:not(:has(span > strong)) {
             display: none !important;
           }
         }
-        &.cooldownText_b21699 {
+        &.b216994de061a9e2-cooldownText {
           transform: translateY(0px);
 		  transform: translateX(16px);
         }
       }
     }
-    .channelAttachmentArea_b77158 {
+    .b77158512e0ab116-channelAttachmentArea {
       background-color: var(--chat-background-default);
     }
     /* the stars of the show, the :has */
     /* check for typing thing */
-    &:has(> .typing_b88801 > .typingDots_b88801 > span > strong)
-      .channelTextArea_f75fb0 {
+    &:has(> .b8880176888cc928-typing > .b8880176888cc928-typingDots > span > strong)
+      .f75fb00fb7356cbe-channelTextArea {
       border-bottom-left-radius: 0 !important;
     }
     /* check for cooldown thing */
-    &:has(> .typing_b88801 > .cooldownWrapper_b21699) .channelTextArea_f75fb0 {
+    &:has(> .b8880176888cc928-typing > .b216994de061a9e2-cooldownWrapper) .f75fb00fb7356cbe-channelTextArea {
       border-bottom-right-radius: 0 !important;
     }
 	/* Fix Add Attachment messing with the rest of the chatbar's Height */
-	.attachWrapper__0923f {
+	._0923f156a0410684-attachWrapper {
     align-self: center;
     padding: 0px calc(var(--space-md) - 6px);
     }
