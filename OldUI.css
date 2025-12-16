@@ -6,7 +6,7 @@
 */
 
 /* Revert the Guild Bar back to Old UI Style */
-/*@import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
+@import url("https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/Imports/GuildBarRevert.css");
 /* Makes Chat Related Alerts feel more seamless */
 @import url("https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/Imports/ChatRelatedAlertsAtTop.css");
 
@@ -303,6 +303,7 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 	align-self: center;
 	padding: 0px calc(var(--space-md) - 6px);
 }
+
 
 
 
