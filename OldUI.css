@@ -40,23 +40,34 @@ body {
 }
 
 /* Old UI User Panel */
-div[class^="sidebar_"] section[class^="panels_"],
-section[class^="panels_"] > [class^="container__"] > [class^="container__"] {
+.visual-refresh {
+#app-mount {
+.sidebar__5e434 .panels__5e434,
+.panels__5e434 > .container__37e49 > .container__4bbc6 {
     border-radius: 0;
 }
 
-div[class^=sidebar_] section[class^=panels_] {
+.sidebar__5e434 .panels__5e434 {
+
     left: var(--custom-guild-list-width);
     bottom: 0;
     width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px) !important;
+	background-color: color-mix(in oklab, var(--background-tertiary), #000 11%);
 }
 
-div[class^=sidebar_] nav[class^=wrapper_] {
-  margin-bottom: unset !important;
+/* Reduce Activity Panel's Height */
+.activityPanel__5e434 {
+    height: 36px;
+	background-color: color-mix(in oklab, var(--background-tertiary), #000 11%) !important;
 }
 
-div[class^=sidebar_] div[class^=scroller__] {
+.sidebar__5e434 .wrapper_ef3116 {
   margin-bottom: unset !important;
+}
+/*div[class^=sidebar_] div[class^=scroller__] {
+  margin-bottom: unset !important;
+}*/
+}
 }
 
 
@@ -66,21 +77,21 @@ div[class^=sidebar_] div[class^=scroller__] {
 }
 /* Move top bar title back to the left */
 .visual-refresh {
-[class^="title_c"] {
+.title_c38106 {
    padding-left: var(--gap);
    justify-content: flex-start;
    margin-left: 0.5%;
 }
-[class^="title_e"] {
+.title_edbb22 {
    gap: 4px;
 }
 /* style top bar title */
-[class^="title_e"] [class^="icon__"] {
+/*.edbb22df99c39831-title .edbb22df99c39831-guildIcon {
     width: 16px;
    height: 16px;
    display: none;
-}
-[class^="title_e"] .text-sm\/medium_cf4812 {
+}*/
+.title_edbb22 .text-sm\/medium_cf4812 {
    line-height: 90%;
    color: var(--text-muted);
    font-weight: 700;
@@ -93,7 +104,7 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 {
    display: none;
 }
-[class^="search_"] {
+.search__97492 {
    order: 1;
    margin: 0 4px 0 12px;
 }
