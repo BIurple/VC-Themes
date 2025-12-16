@@ -52,13 +52,6 @@ body {
     left: var(--custom-guild-list-width);
     bottom: 0;
     width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px) !important;
-	background-color: color-mix(in oklab, var(--background-tertiary), #000 11%);
-}
-
-/* Reduce Activity Panel's Height */
-.activityPanel__5e434 {
-    height: 36px;
-	background-color: color-mix(in oklab, var(--background-tertiary), #000 11%) !important;
 }
 
 .sidebar__5e434 .wrapper_ef3116 {
@@ -303,6 +296,7 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 	align-self: center;
 	padding: 0px calc(var(--space-md) - 6px);
 }
+
 
 
 
