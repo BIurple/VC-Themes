@@ -13,30 +13,31 @@
 /* CSS VARIABLES */
 
 .theme-dark {	
-	--background-primary: var(--background-base-low) !important;
-	--background-secondary: var(--background-base-lower) !important;
-	--background-tertiary: var(--background-base-lowest) !important;
+	--background-primary: var(--background-base-low);
+	--background-secondary: var(--background-base-lower);
+	--background-tertiary: var(--background-base-lowest);
 	--background-surface-highest: var(--background-primary);
 	--background-secondary-alt: color-mix(in oklab, var(--neutral-86) 30%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
 }
 
 .theme-darker {	
-	--background-primary: var(--background-base-low) !important;
-	--background-secondary: var(--background-base-lower) !important;
-	--background-tertiary: var(--background-base-lowest) !important;
+	--background-primary: var(--background-base-low);
+	--background-secondary: var(--background-base-lower);
+	--background-tertiary: var(--background-base-lowest);
 	--background-surface-highest: var(--background-primary);
 	--background-secondary-alt: color-mix(in oklab, var(--neutral-86) 30%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
 }
 .theme-midnight {
-	--background-primary: var(--background-base-low) !important;
-	--background-secondary: var(--background-base-lower) !important;
-	--background-tertiary: var(--background-base-lowest) !important;
+	--background-primary: var(--background-base-low);
+	--background-secondary: var(--background-base-lower);
+	--background-tertiary: var(--background-base-lowest);
 	--background-surface-highest: var(--background-primary);
 	--background-secondary-alt: color-mix(in oklab, var(--neutral-86) 30%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
 }
 
-body {
+:root {
     --custom-channel-textarea-text-area-height: 42px; /* Custom Chat Bar Height, default value is 42px */
+    --custom-app-top-bar-height: 28px;
 }
 
 /* Old UI User Panel */
@@ -64,9 +65,6 @@ body {
 
 
 /* Title Bar CSS */
-:root {
-	--custom-app-top-bar-height: 28px;
-}
 /* Move top bar title back to the left */
 .visual-refresh {
 .c38106a3f0c3ca76-title {
@@ -109,8 +107,8 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 }
 
 /* Fix Weird Blur-Like thing for Chat */
-._36d072eab2b2e737-chatTypingGradientNotAtBottom,._36d072eab2b2e737-chatGradientBase {
-	display: none !important;
+[class*="-chatTypingGradientNotAtBottom"],[class*="-chatGradientBase"] {
+	display: none;
 }
 
 
@@ -295,6 +293,7 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 	align-self: center;
 	padding: 0px calc(var(--space-md) - 6px);
 }
+
 
 
 
