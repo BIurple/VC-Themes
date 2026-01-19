@@ -12,10 +12,10 @@
     );
 }
 
-nav._5e434347c823b592-guilds {
+nav[class*="-guilds"] {
     /* Uncomment if you changed up your nameplate */
-     margin: 0;
-    ._5e434347c823b592-sidebar::after {
+    margin: 0;
+    [class*="sidebar_"]::after {
         height: 0;
     }
 
@@ -25,47 +25,50 @@ nav._5e434347c823b592-guilds {
     }
 
     defs, 
-    .e5445cbd3ad226f2-blobContainer,
-    ._918165dab2b1e10b-listItemWrapper,
-    .cc5dd25190031396-wrapper:not(._650eb104245d257b-listItem > ._650eb104245d257b-wrapper),
-    svg._8784752aa3af335e-placeholderMask,
-    svg:not(._8784752aa3af335e-placeholderMask) > foreignObject {
+    [class*="-blobContainer"],
+    [class*="-listItemWrapper"],
+    [class*="-wrapper"],
+    [class*="-tutorialContainer"] [class*="-wrapper"],
+    svg[class*="-placeholderMask"],
+    svg:not([class*="-placeholderMask"]) > foreignObject {
         width: var(--guildbar-avatar-size) !important;
         height: var(--guildbar-avatar-size) !important;
     }
 
-    ._8784752aa3af335e-dragInner {
+    [class*="-dragInner"] {
         width: 40px;
         height: 40px;
     }
 
-    ._8784752aa3af335e-dragOver {
-        top: calc(var(--guildbar-avatar-size) / 2 + 8px)
+    [class*="-dragOver"] {
+        &[class*="-target"]::before {
+            width: 100%;
+            left: calc(var(--guildbar-avatar-size) / 4);
+        }
+
+        &[class*="-centerTarget"]::before {
+            top: calc(var(--guildbar-avatar-size) / 2 + 8px)
+        }
     }
 
-    ._6e9f8dce4cc18de3-childWrapper>svg {
+    [class*="-childWrapper "]>svg {
         width: calc(var(--guildbar-avatar-size) - 18px);
         height: calc(var(--guildbar-avatar-size) - 18px);
     }
 
     [class*="-childWrapper"],
     [class*="-childWrapper"] img,
-    [class*="-icon"],
+    img[class*="-icon"], [class*="-folderPreviewGuildIcon"], /* allat cause of -iconBadge */
     [class*="-circleIconButton"] {
         border-radius: 50% !important;
         transition: border-radius 150ms linear;
-    }
 
-    [class*="-selected"] {
-        [class*="-childWrapper"],
-        [class*="-childWrapper"] img,
-        [class*="-icon"],
-        &[class*="-circleIconButton"] {
+        [class*="-selected"] &, &[class*="-selected"] {
             border-radius: 27% !important;
         }
     }
 
-    .cc5dd25190031396-shiftSVG {
+    [class*="-shiftSVG"] {
         top: 0px;
         left: 0px;
 
@@ -77,7 +80,7 @@ nav._5e434347c823b592-guilds {
     mask {
         --badge-offset: calc(var(--guildbar-avatar-size) - 40px);
 
-        &:not(._48112cbe77dc5022-folderHeader mask) {
+        &:not([class*="-folderHeader"] mask) {
             use[href$="-lower_badge_masks"] {
                 translate: var(--badge-offset) var(--badge-offset);
             }
@@ -92,22 +95,22 @@ nav._5e434347c823b592-guilds {
         }
     }
 
-    ._48112cbe77dc5022-folderPreviewWrapper {
+    [class*="-folderPreviewWrapper"] {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        ._48112cbe77dc5022-folderPreview {
+        [class$="-folderPreview"] {
             width: calc(var(--guildbar-folder-size) * (2/3) + var(--custom-folder-preview-gap));
             height: calc(var(--guildbar-folder-size) * (2/3) + var(--custom-folder-preview-gap));
         }
     }
 
-    .f34534e8a5d3ca64-iconSizeMini {
+    [class*="-iconSizeMini "] {
         width: calc(var(--guildbar-folder-size) / 3);
         height: calc(var(--guildbar-folder-size) / 3);
 
-        .f34534e8a5d3ca64-acronym {
+        [class*="-acronym"] {
             line-height: calc(var(--guildbar-folder-size) / 3);
         }
 
@@ -122,15 +125,15 @@ nav._5e434347c823b592-guilds {
         }
     }
 
-    ._48112cbe77dc5022-folderButton {
+    [class*="-folderButton"] {
         overflow: visible;
     }
 
-    ._48112cbe77dc5022-folderHeader {
+    [class*="-folderHeader"] {
         --guildbar-avatar-size: var(--guildbar-folder-size);
     }
     
-    ._48112cbe77dc5022-folderIcon {
+    [class*="-folderIcon"] {
         svg {
             width: 24px !important;
             height: 24px !important;
@@ -140,17 +143,16 @@ nav._5e434347c823b592-guilds {
     }
     
     #guild-list-unread-dms > div {
-            height: var(--guildbar-avatar-size) !important;
-        }
+        height: var(--guildbar-avatar-size) !important;
     }
 
-    ._48112cbe77dc5022-isExpanded {
-        ._48112cbe77dc5022-folderGroupBackground {
+    [class*="-isExpanded"] {
+        [class*="-folderGroupBackground"] {
             border-bottom-left-radius: 24px;
             border-bottom-right-radius: 24px;
         }
 
-        .dbd2630aec71879b-stack {
+        [class*="-stack"] {
             height: auto !important;
         }
     }
@@ -158,4 +160,6 @@ nav._5e434347c823b592-guilds {
     [id^="folder-items-"] {
         --guildbar-avatar-size: var(--guildbar-folder-size);
         --blob-scale: var(--folder-blob-scale);
+    }
 }
+
