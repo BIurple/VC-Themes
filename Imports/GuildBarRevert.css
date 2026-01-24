@@ -28,7 +28,7 @@ nav[class*="guilds"] {
     [class*="blobContainer"],
     [class*="listItemWrapper"],
     [class*="wrapper"],
-    [class*="tutorialContainer"] [class*="-wrapper"],
+    [class*="tutorialContainer"] [class*="wrapper"],
     svg[class*="placeholderMask"],
     svg:not([class*="placeholderMask"]) > foreignObject {
         width: var(--guildbar-avatar-size) !important;
@@ -106,7 +106,7 @@ nav[class*="guilds"] {
         }
     }
 
-    [class*="iconSizeMini "] {
+    [class*="iconSizeMini"] {
         width: calc(var(--guildbar-folder-size) / 3);
         height: calc(var(--guildbar-folder-size) / 3);
 
@@ -147,7 +147,7 @@ nav[class*="guilds"] {
     }
 
     [class*="isExpanded"] {
-        [class*="-folderGroupBackground"] {
+        [class*="folderGroupBackground"] {
             border-bottom-left-radius: 24px;
             border-bottom-right-radius: 24px;
         }
