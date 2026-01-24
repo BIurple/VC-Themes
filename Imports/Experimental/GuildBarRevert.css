@@ -12,10 +12,10 @@
     );
 }
 
-nav[class*="-guilds "] {
+nav[class*="-guilds"] {
     /* Uncomment if you changed up your nameplate */
     margin: 0;
-    [class*="-sidebar"]::after {
+    [class*="sidebar_"]::after {
         height: 0;
     }
 
@@ -27,7 +27,7 @@ nav[class*="-guilds "] {
     defs, 
     [class*="-blobContainer"],
     [class*="-listItemWrapper"],
-    [class*="-wrapper"]:not([class*="-listItem "] > [class*="-wrapper"]),
+    [class*="-wrapper"],
     [class*="-tutorialContainer"] [class*="-wrapper"],
     svg[class*="-placeholderMask"],
     svg:not([class*="-placeholderMask"]) > foreignObject {
@@ -41,8 +41,13 @@ nav[class*="-guilds "] {
     }
 
     [class*="-dragOver"] {
-        &, &:before {
-            top: calc(var(--guildbar-avatar-size) / 2 + 8px);
+        &[class*="-target"]::before {
+            width: 100%;
+            left: calc(var(--guildbar-avatar-size) / 4);
+        }
+
+        &[class*="-centerTarget"]::before {
+            top: calc(var(--guildbar-avatar-size) / 2 + 8px)
         }
     }
 
@@ -53,17 +58,12 @@ nav[class*="-guilds "] {
 
     [class*="-childWrapper"],
     [class*="-childWrapper"] img,
-    [class*="-icon"],
+    img[class*="-icon"], [class*="-folderPreviewGuildIcon"], /* allat cause of -iconBadge */
     [class*="-circleIconButton"] {
         border-radius: 50% !important;
         transition: border-radius 150ms linear;
-    }
 
-    [class*="-selected"] {
-        [class*="-childWrapper"],
-        [class*="-childWrapper"] img,
-        [class*="-icon"],
-        &[class*="-circleIconButton"] {
+        [class*="-selected"] &, &[class*="-selected"] {
             border-radius: 27% !important;
         }
     }
@@ -162,3 +162,4 @@ nav[class*="-guilds "] {
         --blob-scale: var(--folder-blob-scale);
     }
 }
+
