@@ -304,6 +304,36 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 	padding: 0px calc(var(--space-md) - 6px);
 }
 
+/* Unobtrusive Disconnect Popup */
+.container_a2f514 {
+    pointer-events: none;
+	padding-bottom: 20px;
+    background: #00000080;
+    bottom: 20px;
+    left: unset;
+    right: 20px;
+    top: 20px !important;
+    height: 180px;
+    width: 300px;
+    border-radius: 8px;
+    border-top: 5px solid;
+    border-top-color: white;
+    transition: border-top-color 1s;
+    &:has(> .slideIn_a2f514) {border-top-color: #df3d40;}
+}
+.spinner_a2f514 {
+	height: 150px !important;
+	width: 150px !important;
+	transform: translate(-50%, -90%);
+	position: absolute;
+}
+.content_a2f514 {padding-top: 40px;}
+.problems_a2f514 {pointer-events: auto; padding-bottom: 20px;}
+
+/* Remove Back/Forward Buttons */
+.backForwardButtons__63abb {
+	display: none;
+}
 
 
 
