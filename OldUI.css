@@ -43,7 +43,8 @@ body {
 .visual-refresh {
 #app-mount {
 .sidebar__5e434 .panels__5e434,
-.panels__5e434 > .container__37e49 > .container__4bbc6 {
+.panels__5e434 > .container__37e49 > .container__4bbc6,
+.panels__5e434 > .container__37e49 {
     border-radius: 0;
 }
 
