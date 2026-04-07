@@ -130,7 +130,7 @@
       border-bottom-color: transparent !important;
     }
   }
-  .newTopicsBarContainer__0f481 {
+  .newMessagesBar__0f481 {
     border: 1px solid var(--border-normal);
     background-color: var(--background-surface-highest) !important;
     color: var(--text-default);
@@ -146,8 +146,9 @@
       color: var(--text-default);
     }
     .barButtonAlt__0f481 {
-      padding: 0 16px;
-      margin-right: 8px;
+      min-height: unset !important;
+      height: 23px !important;
+      margin-right: 0px;
       border-radius: 8px /* taken from newMessagesBar */;
       color: var(--control-primary-text-default);
       background-color: var(--control-primary-background-default);
@@ -155,7 +156,7 @@
       font-weight: 500;
       font-size: 14px;
       &:hover {
-        background-color: var(--control-primary-border-hover);
+        background-color: var(--control-primary-background-hover);
         border: 1px solid transparent;
       }
     }
