@@ -87,8 +87,9 @@ nav[class*="guilds_"] {
             }
         }
 
-        use[href$="-blob_mask"] {
+        use[href*="-blob_mask"] {
             scale: var(--blob-scale);
+            transform-origin: center center;
         }
     }
 
