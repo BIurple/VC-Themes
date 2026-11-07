@@ -10,27 +10,27 @@
     --rscb-chat-box-padding: 8px;
 
 /* Fix annoying space between chat n' chat box */
-.scroller__36d07 {
+.scroller_8AE1Qq {
 	bottom: -1.5%;
 }
 
-#app-mount .form_f75fb0 {
+#app-mount .form_z_gUBg {
     display: flex;
     flex-direction: column;
     padding: 5px var(--rscb-chat-box-padding) var(--rscb-chat-box-padding)
       var(--rscb-chat-box-padding) !important;
     /* Normal chatbar */
-    .channelTextArea_f75fb0 {
+    .channelTextArea_z_gUBg {
       margin-bottom: 0px;
       margin-right: 1px;
       /* reply bar */
-      .stackedBars__74017 {
+      .stackedBars_2x8-Qn {
         border-bottom-color: transparent !important;
         background-color: var(--chat-background-default);
       }
     }
     /* slowmode bar + typing indicator */
-    .base_b88801 {
+    .base_U9Tvvz {
       border-color: transparent !important;
       position: static;
       order: 1;
@@ -39,11 +39,11 @@
       border: 1px solid var(--border-faint);
       border-top: none;
       border-radius: var(--radius-sm) var(--radius-sm) 0 0;
-      .typing_b88801 {
+      .typing_U9Tvvz {
         border-color: transparent !important;
       }
-      .typingDots_b88801,
-      .cooldownText_b21699 {
+      .typingDots_U9Tvvz,
+      .cooldownText_bbCgC2 {
         background-color: var(--chat-background-default);
         height: 24px;
         padding-right: 8px;
@@ -53,34 +53,34 @@
         border: 1px solid var(--border-faint) !important;
         border-top-color: transparent !important;
         /* because they dont have the same position */
-        &.typingDots_b88801 {
+        &.typingDots_U9Tvvz {
           transform: translateX(-25px);
           margin-bottom: 1px;
           &:not(:has(span > strong)) {
             display: none !important;
           }
         }
-        &.cooldownText_b21699 {
+        &.cooldownText_bbCgC2 {
           transform: translateY(0px);
 		  transform: translateX(16px);
         }
       }
     }
-    .channelAttachmentArea_b77158 {
+    .channelAttachmentArea_iH8bsl {
       background-color: var(--chat-background-default);
     }
     /* the stars of the show, the :has */
     /* check for typing thing */
-    &:has(> .typing_b88801 > .typingDots_b88801 > span > strong)
-      .channelTextArea_f75fb0 {
+    &:has(> .typing_U9Tvvz > .typingDots_U9Tvvz > span > strong)
+      .channelTextArea_z_gUBg {
       border-bottom-left-radius: 0 !important;
     }
     /* check for cooldown thing */
-    &:has(> .typing_b88801 > .cooldownWrapper_b21699) .channelTextArea_f75fb0 {
+    &:has(> .typing_U9Tvvz > .cooldownWrapper_bbCgC2) .channelTextArea_z_gUBg {
       border-bottom-right-radius: 0 !important;
     }
 	/* Fix Add Attachment messing with the rest of the chatbar's Height */
-	.attachWrapper__0923f {
+	.attachWrapper_7TM4SO {
     align-self: center;
     padding: 0px calc(var(--space-md) - 6px);
     }
