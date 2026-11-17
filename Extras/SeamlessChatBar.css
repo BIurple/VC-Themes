@@ -2,7 +2,7 @@
  * @name Refreshed Seamless Chat Bar
  * @description Moves around elements near the Chat Bar to be seamless with the message bar
  * @author NSPG911, Modified by Azure
- * @version 1.0.8
+ * @version 1.1.0
 */
 
 :root {
@@ -59,7 +59,7 @@
         border-top-color: transparent !important;
         /* because they dont have the same position */
         &.typingDots_U9Tvvz {
-          transform: translateX(-25px);
+          transform: translateX(-16px);
           margin-bottom: 1px;
           &:not(:has(span > strong)) {
             display: none !important;
@@ -67,7 +67,7 @@
         }
         &.cooldownText_bbCgC2 {
           transform: translateY(0px);
-		  transform: translateX(16px);
+		  transform: translateX(15px);
         }
       }
     }
