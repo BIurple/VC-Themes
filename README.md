@@ -24,7 +24,7 @@ https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/OldUI.css
 # Extras
 
 ### Seamless Chat Bar
-#### Reimagines the Chat Bar, Credit to [NSPC911](https://github.com/NSPC911)
+#### Reimagines the Chat Bar, credit to [NSPC911](https://github.com/NSPC911)
 ```
 https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/Extras/SeamlessChatBar.css
 ```
@@ -35,7 +35,7 @@ https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/Extras/Seaml
 # Credits
 [Scattagain](https://github.com/scattagain) for the guilbar revert theme
 
-[NSPC911](https://github.com/NSPC911) For the seamless integration themes
+[NSPC911](https://github.com/NSPC911) for the seamless integration themes
 
 [OldCord creator(s)](https://github.com/milbits/oldcord) for the Old Context Menu
 
