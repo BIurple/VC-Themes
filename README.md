@@ -29,11 +29,9 @@ https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/OldUI.css
 https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/Extras/SeamlessChatBar.css
 ```
 
-### Modern Indicators
+### [Modern Indicators](https://github.com/discord-extensions/modern-indicators)
 #### Stylizes the way Channels look, credits to the [Discord-Extensions](https://github.com/discord-extensions) team
-```
-https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/Extras/ModernIndicators.css
-```
+
 # Credits
 [Scattagain](https://github.com/scattagain) for the guilbar revert theme
 
