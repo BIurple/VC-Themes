@@ -2,7 +2,7 @@
  * @name Old UI Restoration
  * @description A Bunch of Snippets to Bring back some good aspects of the Old UI
  * @author Blurple
- * @version 1.0.0
+ * @version 1.1.0
 */
 
 /* Revert the Guild Bar back to Old UI Style */
@@ -65,9 +65,8 @@ body {
 .sidebar_pog62O .wrapper_5dqHTG {
   margin-bottom: unset !important;
 }
-/*div[class^=sidebar_] div[class^=scroller__] {
-  margin-bottom: unset !important;
-}*/
+.sidebar_pog62O::after {
+  content: none !important;
 }
 }
 
@@ -87,11 +86,6 @@ body {
    gap: 4px;
 }
 /* style top bar title */
-/*.title_LnjVAX .guildIcon_LnjVAX {
-    width: 16px;
-   height: 16px;
-   display: none;
-}*/
 .title_LnjVAX .body-sm\/medium_RAOoio {
    line-height: 90%;
    color: var(--text-muted);
@@ -125,9 +119,6 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 	    box-shadow: var(--shadow-high);
 	    border-radius: 4px;
 		border: none;
-	}
-	.scroller_M3qk4j, .labelContainer_M3qk4j {
-		padding: 6px 8px;
 	}
 	.wrapper_Qi4I4L {
 		gap: unset;
@@ -256,9 +247,6 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
 	.childContainer_J1Adu_ {
 		padding: 2px 0
 	}
-	/*.clickable_ybUK7Z .icon_ybUK7Z {
-		color: var(--icon-muted);
-	}*/
 	/* channel menus */
 	.header_6bgemo {
 		background: var(--background-tertiary);
