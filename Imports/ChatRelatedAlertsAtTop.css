@@ -90,7 +90,7 @@
   .topicsPillContainer_j9Vvzj {
     border: 1px solid var(--border-normal);
     background-color: var(--background-surface-highest) !important;
-    padding: 4px 8px 4px 12px !important;
+    padding: 4px 12px 4px 12px !important;
     padding-bottom: 4px;
     border-radius: calc(var(--craat-border-radius) * var(--craat-popout))
       calc(var(--craat-border-radius) * var(--craat-popout))
