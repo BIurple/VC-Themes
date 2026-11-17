@@ -117,11 +117,6 @@ a[href="https://support.discord.com"] /* hide help */ /* I MADE A CHANGE FOR COM
     height: 36px
 }
 
-/* Fix Weird Blur-Like thing for Chat */
-.chatTypingGradientNotAtBottom_8AE1Qq,.chatGradientBase_8AE1Qq {
-	display: none !important;
-}
-
 
 /* Old Context/Popout Menu */
 .visual-refresh {
