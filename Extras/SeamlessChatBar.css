@@ -14,6 +14,11 @@
 	bottom: -1.5%;
 }
 
+/* Fix Weird Blur-Like thing for Chat */
+.chatTypingGradientNotAtBottom_8AE1Qq,.chatGradientBase_8AE1Qq {
+	display: none !important;
+}
+
 #app-mount .form_z_gUBg {
     display: flex;
     flex-direction: column;
